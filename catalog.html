@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Nerds</title>
+	<meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:500,100,300,400&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+	<header class="main-header">
+		<div class="container clearfix">
+			<a class="main-logo" href="index.html"><img src="images/logo.png" height="56" width="139" alt="nerds"></a>
+			<nav class="main-menu">
+				<ul>
+					<li><a href="#">Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a href="#" class="current">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="user-block">
+				<a class="basket" href="#"><i class="icon-basket"></i> Корзина</a>
+			</div>
+			<h1 class="catalog-title">Добро пожаловать в магазин готовых макетов</h1>
+		</div>
+	</header>
+
+	<div class="main-content">
+		<div class="container clearfix">
+		<form class="main-filter" action="/echo" method="get">
+			<div class="group-title">Стоимость:</div>
+			<div class="range-filter">
+				<div class="range-controls">
+					<div class="scale">
+						<div style="" class="bar"></div>
+						<div class="toggle min-toggle"></div>
+						<div class="toggle max-toggle"></div>
+					</div>
+				</div>
+				<div class="price-controls">
+					<label class="min-price-label">от</label>
+					<input class="price min-price" type="text" value="0" readonly="true">
+					<label class="max-price-label">до</label>
+					<input class="price max-price" type="text" value="15 000" readonly="true">
+				</div>
+			</div>
+			<div class="group-title">Сетка:</div>
+
+			<input id="r-1" type="radio" name="grid" value="adapt" checked>
+			<label for="r-1">Адаптивная</label><br>
+			<input id="r-2" type="radio" name="grid" value="fix">
+			<label for="r-2">Фиксированная</label><br>
+			<input id="r-3" type="radio" name="grid" value="rub" disabled>
+			<label for="r-3">Резиновая</label><br>
+
+			<div class="group-title">Особенности:</div>
+
+			<input id="cb-1" type="checkbox" name="cb-1" value="cb-1" checked>
+			<label for="cb-1">Слайдер</label><br>
+			<input id="cb-2" type="checkbox" name="cb-2" value="cb-2">
+			<label for="cb-2">Блок преимуществ</label><br>
+			<input id="cb-3" type="checkbox" name="cb-3" value="cb-3" checked>
+			<label for="cb-3">Новости</label><br>
+			<input id="cb-4" type="checkbox" name="cb-4" value="cb-4" checked>
+			<label for="cb-4">Галерея</label><br>
+			<input id="cb-5" type="checkbox" name="cb-5" value="cb-5" disabled>
+			<label for="cb-5">Корзина</label><br>
+		</form>
+			<div class="items">
+				<div class="items-sort">
+					<span class="items-sort-title">Сортировать:</span>
+					<a class="items-sort-by" href="#">По цене</a>
+					<a class="items-sort-by" href="#">По типу</a>
+					<a class="items-sort-by" href="#">По функционалу</a>
+					<a class="items-sort-up active" href="#"><i class="icon-up-dir"></i></a>
+					<a class="items-sort-down" href="#"><i class="icon-down-dir"></i></a>
+				</div>
+				<div class="items-list clearfix">
+					<article class="item">
+						<img src="images/catalog/item1.jpg" height="240" width="240" alt="">
+						<div class="item-popup">
+							<h1>SUNSET</h1>
+							<p>Интернет-магазин с личным кабинетом</p>
+							<a class="btn item-btn" href="#">10 000 Р.</a>
+						</div>
+					</article>
+					<article class="item">
+						<img src="images/catalog/item2.jpg" height="240" width="240" alt="">
+						<div class="item-popup">
+							<h1>SUNSET</h1>
+							<p>Интернет-магазин с личным кабинетом</p>
+							<a class="btn item-btn" href="#">10 000 Р.</a>
+						</div>
+					</article>
+					<article class="item">
+						<img src="images/catalog/item3.jpg" height="240" width="240" alt="">
+						<div class="item-popup">
+							<h1>SUNSET</h1>
+							<p>Интернет-магазин с личным кабинетом</p>
+							<a class="btn item-btn" href="#">10 000 Р.</a>
+						</div>
+					</article>
+					<article class="item">
+						<img src="images/catalog/item4.jpg" height="240" width="240" alt="">
+						<div class="item-popup">
+							<h1>SUNSET</h1>
+							<p>Интернет-магазин с личным кабинетом</p>
+							<a class="btn item-btn" href="#">10 000 Р.</a>
+						</div>
+					</article>
+					<article class="item">
+						<img src="images/catalog/item5.jpg" height="240" width="240" alt="">
+						<div class="item-popup">
+							<h1>SUNSET</h1>
+							<p>Интернет-магазин с личным кабинетом</p>
+							<a class="btn item-btn" href="#">10 000 Р.</a>
+						</div>
+					</article>
+					<article class="item">
+						<img src="images/catalog/item6.jpg" height="240" width="240" alt="">
+						<div class="item-popup">
+							<h1>SUNSET</h1>
+							<p>Интернет-магазин с личным кабинетом</p>
+							<a class="btn item-btn" href="#">10 000 Р.</a>
+						</div>
+					</article>
+				</div>
+				<div class="items-paginator clearfix">
+					<a class="paginator-btn prev disable" href="#">Предыдущая</a>
+					<a class="paginator-btn current" href="#">1</a>
+					<a class="paginator-btn" href="#">2</a>
+					<a class="paginator-btn" href="#">3</a>
+					<a class="paginator-btn next" href="#">Следующая</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="main-footer">
+		<div class="contacts">
+			<h2 class="contacts-title"><span>N&#1025;RDS</span> DESIGN STUDIO</h2>
+			<p class="contacts-address">
+				350000, Краснодар,
+				<br> ул. Володи Головатого, 100
+			</p>
+			<p class="contacts-phone">тел. +7 (861) 275-75-75</p>
+			<a class="btn contacts-btn" href="#">Напишите нам</a>
+		</div>
+		<div id="map" class="map"></div>
+		<div class="container clearfix">
+			<div class="socials">
+				<div class="socials-btns">
+					<a class="social-btn social-vk"><i class="icon-vk"></i></a>
+					<a class="social-btn social-fb"><i class="icon-facebook"></i></a>
+					<a class="social-btn social-ig"><i class="icon-twitter"></i></a>
+				</div>
+				<div class="socials-discribe">
+					<h2 class="socials-title">Давайте дружить, это выгодно!</h2>
+					<div class="socials-text">Скидка 10% для друзей из социальных сетей.</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal-content">
+		<form class="modal-form" action="#" method="post">
+		<div class="modal-form-group">
+			<label for="name">Ваше имя:</label>
+			<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+		</div>
+		<div class="modal-form-group">
+			<label for="email">Ваш e-mail:</label>
+			<input type="email" name="email" id="email" placeholder="Для отправки ответа">
+		</div>
+		<div class="modal-form-group">
+			<label for="letter">Текст письма:</label>
+			<textarea name="letter" id="letter"  placeholder="В свободной форме"></textarea>
+		</div>
+		<button class="btn" type="submit">Отправить</button>
+		<button class="btn modal-content-close" type="button">Отмена</button>
+		</form>
+	</div>
+
+	<script src="scripts/scripts.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPYwWTtSja8lTaDrK5lv0IY07E-YfSvyk&callback=initMap">
+    </script>
+</body>
+
+</html>
