@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 @font-face {
   font-family: 'symbols-nerds';
   src: url('../font/symbols-nerds.eot?94604853');
@@ -834,6 +834,7 @@ transform: translateX(0px);
   border-radius: 50%;
   background-color: #ababab;
   box-shadow: -1px 1px 0 #cfcfcf;
+  cursor: pointer;
   /*minleft: 20px; maxLeft: 220px;*/
 }
 .range-filter .min-toggle{
